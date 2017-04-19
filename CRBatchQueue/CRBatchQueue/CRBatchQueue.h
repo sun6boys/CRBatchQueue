@@ -17,6 +17,7 @@
 
 @end
 
+
 typedef NS_ENUM(NSInteger,CRBatchExecuteTaskType){
     CRBatchQueueTypeSerial,         //execute at background thread on serial queue
     CRBatchQueueTypeConcurrent,     //execute at background thread on concurrent queue
@@ -25,6 +26,7 @@ typedef NS_ENUM(NSInteger,CRBatchExecuteTaskType){
 @interface CRBatchQueue : NSObject
 
 - (instancetype)initWithType:(CRBatchExecuteTaskType)type;
++ (instancetype)batchQueueWithType:(CRBatchExecuteTaskType)type;
 
 - (void)appendTask:(CRBatchTask *)task;
 - (void)appendTasksFromArray:(NSArray<CRBatchTask *> *)tasks;

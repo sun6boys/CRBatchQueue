@@ -10,7 +10,7 @@
 
 @interface CRAsyncTask : NSObject
 
-//写着完，其实没什么卵用，不如直接用NSBlockOperation 还可以cancel
+//写着玩，其实没什么卵用，不如直接用NSBlockOperation 还可以cancel
 + (CRAsyncTask *)asyncTaskWithTaskBlock:(dispatch_block_t)taskBlock;
 
 - (void)start;

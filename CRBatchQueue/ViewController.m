@@ -23,6 +23,8 @@
     _concurrentQueue = [[CRBatchQueue alloc] initWithType:CRBatchQueueTypeConcurrent];
 
     _serialQueue = [[CRBatchQueue alloc] initWithType:CRBatchQueueTypeSerial];
+    
+    [NSOperationQueue currentQueue];
 }
 
 

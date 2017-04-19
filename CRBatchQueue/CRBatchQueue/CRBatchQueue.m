@@ -73,6 +73,11 @@ static dispatch_queue_t GlobalBatchConcurrentQueue(){
     return self;
 }
 
++ (instancetype)batchQueueWithType:(CRBatchExecuteTaskType)type
+{
+    return [[self alloc] initWithType:type];
+}
+
 - (void)appendTask:(CRBatchTask *)task
 {
     NSAssert(task != nil, @"task can't be nil");
