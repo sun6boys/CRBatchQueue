@@ -13,6 +13,7 @@
 		CE68486A1EA72C8E00EDAE05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6848681EA72C8E00EDAE05 /* Main.storyboard */; };
 		CE68486C1EA72C8E00EDAE05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE68486B1EA72C8E00EDAE05 /* Assets.xcassets */; };
 		CE68486F1EA72C8E00EDAE05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE68486D1EA72C8E00EDAE05 /* LaunchScreen.storyboard */; };
+		CE6848791EA72CAD00EDAE05 /* CRBatchQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6848781EA72CAD00EDAE05 /* CRBatchQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		CE68486B1EA72C8E00EDAE05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE68486E1EA72C8E00EDAE05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE6848701EA72C8E00EDAE05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE6848771EA72CAD00EDAE05 /* CRBatchQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBatchQueue.h; sourceTree = "<group>"; };
+		CE6848781EA72CAD00EDAE05 /* CRBatchQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBatchQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		CE68485E1EA72C8E00EDAE05 /* CRBatchQueue */ = {
 			isa = PBXGroup;
 			children = (
+				CE6848761EA72CAD00EDAE05 /* CRBatchQueue */,
 				CE6848621EA72C8E00EDAE05 /* AppDelegate.h */,
 				CE6848631EA72C8E00EDAE05 /* AppDelegate.m */,
 				CE6848651EA72C8E00EDAE05 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				CE6848601EA72C8E00EDAE05 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE6848761EA72CAD00EDAE05 /* CRBatchQueue */ = {
+			isa = PBXGroup;
+			children = (
+				CE6848771EA72CAD00EDAE05 /* CRBatchQueue.h */,
+				CE6848781EA72CAD00EDAE05 /* CRBatchQueue.m */,
+			);
+			path = CRBatchQueue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE6848671EA72C8E00EDAE05 /* ViewController.m in Sources */,
+				CE6848791EA72CAD00EDAE05 /* CRBatchQueue.m in Sources */,
 				CE6848641EA72C8E00EDAE05 /* AppDelegate.m in Sources */,
 				CE6848611EA72C8E00EDAE05 /* main.m in Sources */,
 			);
