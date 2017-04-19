@@ -14,6 +14,7 @@
 		CE68486C1EA72C8E00EDAE05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE68486B1EA72C8E00EDAE05 /* Assets.xcassets */; };
 		CE68486F1EA72C8E00EDAE05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE68486D1EA72C8E00EDAE05 /* LaunchScreen.storyboard */; };
 		CE6848791EA72CAD00EDAE05 /* CRBatchQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6848781EA72CAD00EDAE05 /* CRBatchQueue.m */; };
+		CE68487F1EA74A2600EDAE05 /* CRAsyncTask.m in Sources */ = {isa = PBXBuildFile; fileRef = CE68487E1EA74A2600EDAE05 /* CRAsyncTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		CE6848701EA72C8E00EDAE05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE6848771EA72CAD00EDAE05 /* CRBatchQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBatchQueue.h; sourceTree = "<group>"; };
 		CE6848781EA72CAD00EDAE05 /* CRBatchQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBatchQueue.m; sourceTree = "<group>"; };
+		CE68487D1EA74A2600EDAE05 /* CRAsyncTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRAsyncTask.h; sourceTree = "<group>"; };
+		CE68487E1EA74A2600EDAE05 /* CRAsyncTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRAsyncTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 			children = (
 				CE6848771EA72CAD00EDAE05 /* CRBatchQueue.h */,
 				CE6848781EA72CAD00EDAE05 /* CRBatchQueue.m */,
+				CE68487D1EA74A2600EDAE05 /* CRAsyncTask.h */,
+				CE68487E1EA74A2600EDAE05 /* CRAsyncTask.m */,
 			);
 			path = CRBatchQueue;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 				CE6848791EA72CAD00EDAE05 /* CRBatchQueue.m in Sources */,
 				CE6848641EA72C8E00EDAE05 /* AppDelegate.m in Sources */,
 				CE6848611EA72C8E00EDAE05 /* main.m in Sources */,
+				CE68487F1EA74A2600EDAE05 /* CRAsyncTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +327,7 @@
 				CE6848751EA72C8E00EDAE05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
