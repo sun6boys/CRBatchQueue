@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "CRBatchQueue.h"
 #import <libkern/OSAtomic.h>
-
+#import "CRSemaphore.h"
 
 @interface ViewController ()
 
@@ -35,7 +35,7 @@
     uint32_t returnFlag = OSAtomicOr32Barrier(maskFlag, &atomicFlags);
     
     NSLog(@"returnFlag = %d, atomicFlags = %d",returnFlag,atomicFlags);
-        
+    
 }
 
 
@@ -91,6 +91,13 @@
     }];
 }
 
+- (IBAction)semaphoreTest:(id)sender
+{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"%@",[self name]);
+    });
+}
+
 
 - (void)task1
 {
@@ -115,4 +122,17 @@
 }
 
 
+
+- (NSString *)name
+{
+    CRSemaphore *semaphoreTes5 = [CRSemaphore semaphore];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [semaphoreTes5 signalFailure];
+    });
+    BOOL isSuccess = [semaphoreTes5 wait:5];
+    
+    NSLog(@"%d",isSuccess);
+    
+    return @"testName";
+}
 @end

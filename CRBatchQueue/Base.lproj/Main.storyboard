@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,6 +34,14 @@
                                 <state key="normal" title="异步串行"/>
                                 <connections>
                                     <action selector="serialTestClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S0r-2t-GUU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVy-C5-M6z">
+                                <rect key="frame" x="49" y="387" width="106" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Semaphore"/>
+                                <connections>
+                                    <action selector="semaphoreTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JEh-9w-DBD"/>
                                 </connections>
                             </button>
                         </subviews>
