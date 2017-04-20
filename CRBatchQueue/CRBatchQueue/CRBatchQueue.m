@@ -156,8 +156,7 @@ static dispatch_queue_t GlobalBatchConcurrentQueue(){
 
 - (void)_sendCompletion:(dispatch_block_t)completionBlock
 {
-    NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:completionBlock];
-    [self.currentQueue addOperation:operation];
+    [self.currentQueue addOperationWithBlock:completionBlock];
     [self.tasks removeAllObjects];
     self.isExecuting = NO;
 }

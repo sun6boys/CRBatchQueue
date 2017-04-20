@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE55BCEA1EA84BD000C275A7 /* CRSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = CE55BCE91EA84BD000C275A7 /* CRSemaphore.m */; };
 		CE6848611EA72C8E00EDAE05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6848601EA72C8E00EDAE05 /* main.m */; };
 		CE6848641EA72C8E00EDAE05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6848631EA72C8E00EDAE05 /* AppDelegate.m */; };
 		CE6848671EA72C8E00EDAE05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6848661EA72C8E00EDAE05 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE55BCE81EA84BD000C275A7 /* CRSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRSemaphore.h; sourceTree = "<group>"; };
+		CE55BCE91EA84BD000C275A7 /* CRSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRSemaphore.m; sourceTree = "<group>"; };
 		CE68485C1EA72C8E00EDAE05 /* CRBatchQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRBatchQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6848601EA72C8E00EDAE05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE6848621EA72C8E00EDAE05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 			children = (
 				CE6848771EA72CAD00EDAE05 /* CRBatchQueue.h */,
 				CE6848781EA72CAD00EDAE05 /* CRBatchQueue.m */,
+				CE55BCE81EA84BD000C275A7 /* CRSemaphore.h */,
+				CE55BCE91EA84BD000C275A7 /* CRSemaphore.m */,
 				CE68487D1EA74A2600EDAE05 /* CRAsyncTask.h */,
 				CE68487E1EA74A2600EDAE05 /* CRAsyncTask.m */,
 			);
@@ -169,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE6848671EA72C8E00EDAE05 /* ViewController.m in Sources */,
+				CE55BCEA1EA84BD000C275A7 /* CRSemaphore.m in Sources */,
 				CE6848791EA72CAD00EDAE05 /* CRBatchQueue.m in Sources */,
 				CE6848641EA72C8E00EDAE05 /* AppDelegate.m in Sources */,
 				CE6848611EA72C8E00EDAE05 /* main.m in Sources */,
@@ -291,6 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CRBatchQueue/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CRBatchQueue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CRBatchQueue/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CRBatchQueue;
 				PRODUCT_NAME = "$(TARGET_NAME)";

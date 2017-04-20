@@ -12,7 +12,7 @@ static dispatch_queue_t GlobalAsyncTaskConcurrentQueue(){
     static dispatch_queue_t globalAsyncTaskConcurrentQueue;
     static dispatch_once_t once;
     dispatch_once(&once, ^{
-        globalAsyncTaskConcurrentQueue = dispatch_queue_create("com.CRBatchQueue.ExcuteTaskConcurrent", DISPATCH_QUEUE_CONCURRENT);
+        globalAsyncTaskConcurrentQueue = dispatch_queue_create("com.CRAsyncTask.taskConcurrent", DISPATCH_QUEUE_CONCURRENT);
     });
     return globalAsyncTaskConcurrentQueue;
 }

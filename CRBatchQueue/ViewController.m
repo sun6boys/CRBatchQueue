@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "CRBatchQueue.h"
+#import <libkern/OSAtomic.h>
+
 
 @interface ViewController ()
 
@@ -16,6 +18,10 @@
 @end
 
 @implementation ViewController
+{
+    uint32_t atomicFlags;
+    dispatch_semaphore_t semaphore;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,7 +30,12 @@
 
     _serialQueue = [[CRBatchQueue alloc] initWithType:CRBatchQueueTypeSerial];
     
-    [NSOperationQueue currentQueue];
+    
+    uint32_t maskFlag = 25;
+    uint32_t returnFlag = OSAtomicOr32Barrier(maskFlag, &atomicFlags);
+    
+    NSLog(@"returnFlag = %d, atomicFlags = %d",returnFlag,atomicFlags);
+        
 }
 
 
